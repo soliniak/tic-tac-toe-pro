@@ -1,0 +1,50 @@
+*
+	box-sizing: border-box
+
+.container
+	width: 100%
+	height: 100vh
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	background: radial-gradient(ellipse at center, #dba3d1 0%, #4e3385 80%, #29212a 100%)
+	
+.grid-size__container
+	margin-bottom: 1rem
+	color: #fff
+
+.area
+	background: linear-gradient(#29212a 0%, #2d2e86 50%, #29212a 100%)
+	display: grid
+	padding: 10px
+	grid-gap: 10px
+    justify-content: space-between
+
+#gridSelect
+	cursor: pointer
+
+.item
+	display: flex
+	align-items: center
+	justify-content: center
+	font-size: 5rem
+	text-transform: uppercase
+	font-family: Tahoma
+	cursor: pointer
+	background-color: #f0f5f6
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='115px' height='115px' version='1.1' shape-rendering='geometricPrecision' text-rendering='geometricPrecision' image-rendering='optimizeQuality' fill-rule='evenodd' clip-rule='evenodd' viewBox='0 0 15863 15863' xmlns:xlink='http://www.w3.org/1999/xlink'><path fill='rgba(210,240,255, .7)' d='M509 2908l2386 -2386 745 739c1237,-798 2710,-1261 4292,-1261 1581,0 3054,463 4292,1261l745 -739 2386 2386 -744 745c793,1234 1252,2703 1252,4279 0,1557 -449,3009 -1224,4234l716 710 -2439 2465 -720 -721c-1231,787 -2695,1243 -4264,1243 -1570,0 -3033,-456 -4265,-1243l-719 721 -2439 -2465 715 -710c-775,-1225 -1224,-2677 -1224,-4234 0,-1576 460,-3045 1252,-4279l-743 -745zm5533 734l1890 1874 1890 -1874c-578,-255 -1218,-397 -1890,-397 -673,0 -1312,142 -1890,397zm6181 2404l-1868 1873 1882 1866c245,-568 381,-1195 381,-1853 0,-671 -141,-1309 -395,-1886zm-2415 6181l-1876 -1880 -1876 1880c574,251 1208,391 1876,391 667,0 1301,-140 1876,-391zm-6182 -2442l1883 -1866 -1869 -1873c-254,577 -395,1215 -395,1886 0,658 136,1284 381,1853z'/></svg>")
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: 80%
+
+.winning-field
+	background-color: #c3ff00
+
+.reset-game__btn
+	margin-top: 1rem
+	padding: .5rem 1rem
+	cursor: pointer
+	
+svg
+	pointer-events: none
